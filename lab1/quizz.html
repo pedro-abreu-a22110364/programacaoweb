@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lanf="pt">
+
+<head>
+
+    <title>Amesterdão</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Pedro Abreu">
+    <meta name="description" content="Website sobre Amesterdão">
+    <meta name="keywords" content="amesterdão">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Amesterdão</h1>
+        <figure>
+            <img src="images/amesterdao.jpg" alt="Amesterdão">
+            <figcaption>Foto dos canais de Amesterdão</figcaption>
+        </figure>
+    </header>
+
+    <nav>
+        <p>
+            <a href="index.html">Introdução</a>
+            <a href="local.html">Localização</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="info.html">Informação</a>
+            <a href="quizz.html"><b>Quizz</b></a>
+            <a href="html5-css.html">HTML5 e CSS</a>
+        </p>
+    </nav>
+    <br>
+
+    <main>
+        <section>
+            <h3>Quizz</h3>
+            <p>Prepara-te para testares os teus conhecimentos sobre Amesterdão com este quizz!</p>
+        </section>
+
+        <form method="post" action="mailto: pedromiguelrijodeabreu@gmail.com" enctype="multipart/form-data" id="formquizz">
+
+            <fieldset>
+                <legend>Quizz Amesterdão</legend>
+            </fieldset>
+
+            <fieldset>
+                <legend>Info</legend>
+
+                <fieldset>
+                    <legend>Nome</legend>
+                    <input type="text" placeholder="insira o seu nome" name="nome" autocomplete="on" size="50"
+                        maxlength="50" autofocus required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Apelido</legend>
+                    <input type="text" placeholder="insira o seu apelido" name="apelido" autocomplete="on" size="50"
+                        maxlength="50" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Email</legend>
+                    <input type="email" placeholder="insira o seu email" name="email" autocomplete="off" size="150"
+                        maxlength="150" required>
+                </fieldset>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Perguntas</legend>
+
+                <fieldset>
+                    <legend>Pergunta 1: Alguma vez viajou para Amesterdão?</legend>
+
+                    <label>
+                        <input type="radio" name="opc" value="sim">Sim
+                    </label>
+
+                    <label>
+                        <input type="radio" name="opc" value="nao">Não
+                    </label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pergunta 2: O que o levou a se interessar por Amesterdão?</legend>
+
+                    <label>
+                        <input type="checkbox" name="interesses" value="gastronomia">Gastronomia
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interesses" value="cultura">Cultura
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interesses" value="negocios">Negócios
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interesses" value="festivais/espetáculos">Festivais/Espetáculos
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pergunta 3: Em que data viajou ou pretende viajar para Amesterdão?</legend>
+                    <input type="date" name="dataviajem">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pergunta 4: Que icon melhor descreve a cidade de Amesterdão?</legend>
+
+                    <input type="image" src="images/cannabis.png" width="48" height="48">
+                    <input type="image" src="images/tulipas.png" width="48" height="48">
+                    <input type="image" src="images/anne.png" width="48" height="48">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pergunta 5: Que cor melhor se enquadra com a cidade de Amesterdão?</legend>
+
+                    <input type="color" name="cor">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pergunta 6: Em que ano foi fundada a cidade de Amesterdão?</legend>
+
+                    <input type="number" name="ano" min="0" max="2023" step="1">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pergunta 7: De 0 a 10, como avalia Amesterdão?</legend>
+
+                    <input type="range" name="avaliacao" min="0" max="10" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pergunta 8: Selecione a(s) comida(s) típicas que mais adora</legend>
+
+                    <select name="comidas" multiple>
+                        <option value="queijos">Queijos</option>
+                        <option value="kibbeling">Kibbeling</option>
+                        <option value="tartemaca">Tarte de Maçã</option>
+                        <option value="stroopwafel">Stroopwafel</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pergunta 9: Em que país se situa a cidade de Amesterdão (código de dois digitos)?</legend>
+
+                    <input list="countrycode" name="codes" pattern="[A-Z]{2}">
+                    <datalist id="countrycode">
+                        <option value="PT">
+                        <option value="BR">
+                        <option value="NL">
+                        <option value="FR">
+                        <option value="BE">
+                        <option value="RU">
+                        <option value="DE">
+                    </datalist>
+                </fieldset>
+            </fieldset>
+
+            <input type="submit" value="Submeter">
+        </form>
+
+        <br>
+
+        <textarea name="comentario" rows="10" cols="30" form="formquizz">
+            Insira um comentário acerca do quizz!
+        </textarea>
+    </main>
+
+    <footer>Pedro Abreu, a22110364, Universidade Lusófona, 2023</footer>
+
+</body>
+
+</html>
