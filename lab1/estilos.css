@@ -1,0 +1,40 @@
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: lightblue;
+}
+
+a:link{
+    color: blueviolet;
+}
+
+a:visited{
+    color:rgb(82, 81, 81);
+}
+
+a:hover{
+    color: yellow;
+}
+
+a:active{
+    color: crimson;
+}
+
+legend{
+    background-color: transparent;
+}
+
+.verde{
+    background-color: rgb(193, 252, 193);
+}
+
+.amarelo{
+    background-color: lightyellow;
+}
+
+#tituloid{
+    background-color: darkcyan;
+}
+
+#infoid,#perguntasid{
+    background-color: whitesmoke;
+}
