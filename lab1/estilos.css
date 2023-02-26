@@ -3,6 +3,56 @@
     background-color: lightblue;
 }
 
+header img{
+    border-color: darkblue;
+    border-radius: 5%;
+}
+
+legend,label{
+    background-color: transparent;
+}
+
+.verde{
+    background-color: rgb(193, 252, 193);
+}
+
+.amarelo{
+    background-color: lightyellow;
+}
+
+#tituloid{
+    background-color: wheat;
+}
+
+#tituloid > legend{
+    font-size: larger;
+}
+
+#infoid,#perguntasid{
+    background-color: whitesmoke;
+}
+
+#titulopoemaid,#autorid,#poemaid{
+    text-align: center;
+}
+
+#titulopoemaid{
+    font-size: x-large;
+}
+
+#autorid{
+    font-size: large;
+}
+
+#poemaid{
+    font-style: italic;
+}
+
+input[type="submit"]{
+    background-color: black;
+    color: white;
+}
+
 a:link{
     color: blueviolet;
 }
@@ -27,38 +77,10 @@ a:hover::before{
     content: "▶️";
 }
 
-legend{
-    background-color: transparent;
-}
-
-.verde{
-    background-color: rgb(193, 252, 193);
-}
-
-.amarelo{
-    background-color: lightyellow;
-}
-
-#tituloid{
-    background-color: darkcyan;
-}
-
-#infoid,#perguntasid{
-    background-color: whitesmoke;
-}
-
-#titulopoemaid,#autorid,#poemaid{
-    text-align: center;
-}
-
-#titulopoemaid{
+#indexp::first-letter{
     font-size: x-large;
 }
 
-#autorid{
-    font-size: large;
-}
-
-#poemaid{
+#indexp::first-line{
     font-style: italic;
 }
