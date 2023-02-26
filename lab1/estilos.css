@@ -12,11 +12,19 @@ a:visited{
 }
 
 a:hover{
-    color: yellow;
+    color: #2ba6fe;
 }
 
 a:active{
     color: crimson;
+}
+
+a:hover::after{
+    content: "◀️";
+}
+
+a:hover::before{
+    content: "▶️";
 }
 
 legend{
