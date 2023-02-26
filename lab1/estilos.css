@@ -38,3 +38,19 @@ legend{
 #infoid,#perguntasid{
     background-color: whitesmoke;
 }
+
+#titulopoemaid,#autorid,#poemaid{
+    text-align: center;
+}
+
+#titulopoemaid{
+    font-size: x-large;
+}
+
+#autorid{
+    font-size: large;
+}
+
+#poemaid{
+    font-style: italic;
+}
