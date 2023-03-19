@@ -3,11 +3,11 @@
 
 <head>
 
-    <title>Amesterdão</title>
+    <title>Viajar</title>
     <meta charset="utf-8">
     <meta name="author" content="Pedro Abreu">
-    <meta name="description" content="Website sobre Amesterdão">
-    <meta name="keywords" content="amesterdão">
+    <meta name="description" content="Website lab3">
+    <meta name="keywords" content="flex">
     <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -18,19 +18,27 @@
 
 <body>
     <header>
+        <h1>Laboratório 3</h1>
 
+        <nav>
+            <a href="#c1">Elemento centrado usando flex</a>
+            <a href="#c2">Imagem com texto usando position</a>
+            <a href="#c3">Capitais europeias usando flex</a>
+            <a href="#c4">Propriedades CSS flex</a>
+            <a href="#c5">Páginas com diferentes layouts usando grid</a>
+        </nav>
     </header>
 
-    <div class="flex-container">
+    <div class="flex-container" id="c1">
         <p>Viajar</p>
     </div>
 
-    <div class="seconddiv">
+    <div id="c2">
         <img src="images/beach.jpg">
         <p id="pfixe">Não gosto deste enunciado</p>
     </div>
 
-    <div class="capitais">
+    <div class="capitais" id="c3">
         <div>
             <div>
                 <img src="images/bruxelas.jpg">
@@ -131,10 +139,27 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="c4">
         <div id="div1"><i class='fas fa-dice-three'></i></div>
         <div id="div2"><i class='fab fa-amazon'></i></div>
         <div id="div3"><i class='fab fa-amazon'></i></div>
+    </div>
+
+    <div class="grid-container" id="c5">
+        <header>Viajar</header>
+        <nav>Menu</nav>
+        <main>Main</main>
+        <aside>
+            <div class="container-right">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+        </aside>
+        <footer>Footer</footer>
     </div>
 
 </body>
