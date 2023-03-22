@@ -2,21 +2,45 @@
     font-family: 'Oxygen', sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    background-image: url(./images/amesterdao.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 5vh auto;
+
+    grid-template-areas: 
+        'header nav'
+        'bodyp bodyp';
+}
+
+header, nav {
+    background: rgb(255,255,255,0.5);
+    color: rgb(59, 59, 59);
 }
 
 header {
-    height: 10vh;
-    background: white;
-    color: rgb(59, 59, 59);
-    position: sticky;
-    top: 0;
+    grid-area: header;
 }
 
-main img {
-    height: 90vh;
-    width: 100%;
-    background: (0,0,0,0.5);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+nav {
+    grid-area: nav;
+}
+
+body > p {
+    color: white;
+    align-self: center;
+    margin-left: 5%;
+
+    font-size: large;
+    font-weight: bold;
+
+    grid-area: bodyp;
 }
