@@ -20,6 +20,7 @@ div{
 
 #c2{
     position: relative;
+    z-index: 0;
 }
 
 img{
@@ -118,6 +119,7 @@ i{
 
 header{
     position: sticky;
+    z-index: 1;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -140,54 +142,3 @@ header nav a:hover{
     color: #888888;
     font-weight: bold;
 }
-
-/*2*/
-
-.grid-container header {  grid-area: header; background-color: plum;}
-.grid-container nav {  grid-area: menu; background-image: url(https://images.unsplash.com/photo-1614850523060-8da1d56ae167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGlnaHQlMjBjb2xvdXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);}
-.grid-container main {  grid-area: main; background-image: url("https://cdn.wallpapersafari.com/80/9/I04xgG.jpg");  background-size: cover; color: white;}
-.grid-container aside {  grid-area: right; }
-.grid-container footer {  grid-area: footer; background-color: rgb(203, 242, 255);}
-
-.grid-container {
-    display: grid;
-    height: 100vh;
-    gap: 10px;
-    padding: 10px;
-    background-color: rgb(252, 174, 174);
-  
-    grid-template-areas:
-      "header header  header"
-      "menu   main    right"
-      "footer footer  footer";
-  
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 10% 15vw 15%;
-  }
-  
-  .grid-container > * {
-    background-color: beige;
-    opacity: 0.8;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 4vw;
-  }
-
-  .container-right {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50% 50%;
-    gap: 10px;
-    padding: 10px;
-    background-color: beige;
-    
-  }
-  
-  
-  .container-right div {
-    background-color: rgb(203, 242, 255);
-    border: 1px solid;
-    text-align: center;
-    padding: 20px;
-    font-size: 30px;
-  }
