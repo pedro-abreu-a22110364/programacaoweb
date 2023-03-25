@@ -21,6 +21,26 @@ header {
 
 nav {
     grid-area: nav;
+    display: flex;
+    justify-content: right;
+}
+
+.content {
+    display: none;
+    position: absolute;
+
+    background-color: darkgray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.item {
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+input[type="checkbox"] {
+    display: none;
 }
 
 body > p {
