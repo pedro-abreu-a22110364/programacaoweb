@@ -5,25 +5,32 @@
     box-sizing: border-box;
 }
 
-body{
-    display: grid;
-    background-image: url(./images/amesterdao.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 5vh auto;
-
-    grid-template-areas: 
-        'header nav'
-        'bodyp bodyp';
+@media (min-width:601px) {
+    body{
+        display: grid;
+        background-image: url(./images/amesterdao.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 5vh auto;
+    
+        grid-template-areas: 
+            'header nav'
+            'bodyp bodyp';
+    }
 }
 
 header, nav {
+    display: grid;
     background: rgb(255,255,255,0.5);
     color: rgb(59, 59, 59);
+    font-weight: bolder;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
 }
 
 header {

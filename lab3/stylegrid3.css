@@ -1,25 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
 .grid-container header {  grid-area: header; background-color: plum;}
 .grid-container nav {  grid-area: menu; }
 .grid-container main {  grid-area: main; background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/1d/a9/fc/catedral-de-san-bravo.jpg?w=2000&h=-1&s=1");  background-size: cover; color: white;}
 .grid-container aside {  grid-area: right; background-image: url(https://images.unsplash.com/photo-1614850523060-8da1d56ae167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGlnaHQlMjBjb2xvdXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60); background-size: cover;}
 .grid-container footer {  grid-area: footer; background-color: rgb(203, 242, 255);}
-
-.grid-container {
-    display: grid;
-    height: 100vh;
-    gap: 10px;
-    padding: 10px;
-    background-color: rgb(252, 174, 174);
-  
-    grid-template-areas:
-      "header header"
-      "menu main"
-      "right right"
-      "footer footer";
-  
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 10% 58% 12% 10%;
-  }
   
   .grid-container > * {
     background-color: beige;
@@ -27,6 +14,10 @@
     text-align: center;
     padding: 10px 0;
     font-size: 4vw;
+  }
+
+  .grid-container header {
+    font-size: 3vh;
   }
 
   .grid-container main,header {
@@ -43,7 +34,7 @@
 
   .grid-container footer {
     display: grid;
-    font-size: 2vw;
+    font-size: 2vh;
     align-items: center;
     justify-content: center;
   }
@@ -70,4 +61,43 @@
     text-align: center;
     padding: 20px;
     font-size: 30px;
+  }
+
+  @media only screen and (min-width:601px), (orientation:landscape) {
+    .grid-container {
+      display: grid;
+      height: 100vh;
+      gap: 10px;
+      padding: 10px;
+      background-color: rgb(252, 174, 174);
+    
+      grid-template-areas:
+        "header header"
+        "menu main"
+        "right right"
+        "footer footer";
+    
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 10% 58% 12% 10%;
+    }
+  }
+  
+  @media only screen and (max-width:600px), (orientation:portrait) {
+    .grid-container {
+      display: grid;
+      height: 100vh;
+      gap: 10px;
+      padding: 10px;
+      background-color: rgb(252, 174, 174);
+    
+      grid-template-areas:
+        "header"
+        "menu"
+        "main"
+        "right"
+        "footer";
+    
+      grid-template-columns: 1fr;
+      grid-template-rows: 12% 25% 33% 12% 10%;
+    }
   }
