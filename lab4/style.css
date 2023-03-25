@@ -5,24 +5,6 @@
     box-sizing: border-box;
 }
 
-@media (min-width:601px) {
-    body{
-        display: grid;
-        background-image: url(./images/amesterdao.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 100vh;
-    
-        grid-template-columns: auto 1fr;
-        grid-template-rows: 5vh auto;
-    
-        grid-template-areas: 
-            'header nav'
-            'bodyp bodyp';
-    }
-}
-
 header, nav {
     display: grid;
     background: rgb(255,255,255,0.5);
@@ -50,4 +32,41 @@ body > p {
     font-weight: bold;
 
     grid-area: bodyp;
+}
+
+@media only screen and (min-width:601px), (orientation:landscape) {
+    body{
+        display: grid;
+        background-image: url(./images/amesterdao.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 5vh auto;
+    
+        grid-template-areas: 
+            'header nav'
+            'bodyp bodyp';
+    }
+}
+
+@media only screen and (max-width:600px), (orientation:portrait) {
+    body{
+        display: grid;
+        background-image: url(./images/amesterdao.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    
+        grid-template-columns: auto;
+        grid-template-rows: 5vh auto;
+    
+        grid-template-areas: 
+            'header'
+            'nav'
+            'bodyp';
+    }
 }
